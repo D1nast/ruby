@@ -1,0 +1,9 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <%="こんにちは！#{@user.user}さん"%>
+			<h2>ここはマイページです</h2>
+      <%= link_to("編集", "/user/#{@user.id}/edit") %>
+    </div>
+  </div>
+</div>

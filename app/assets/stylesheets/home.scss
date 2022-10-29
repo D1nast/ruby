@@ -1,0 +1,201 @@
+body {
+  background-color: #faf4f4;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  margin-top: 72px;
+  background-image: url("/Ski.jpg");
+  background-size: cover;
+  z-index: 9;
+}
+
+.overview {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  text-align: center;
+  margin-top: 72px;
+}
+
+.intro {
+  width: 70%;
+  height: 200px;
+  margin-top: 70px;
+  text-align: left;
+
+  h2 {
+    color: white;
+    display: block;
+    margin-left: 20%;
+    padding-top: 15%;
+  }
+}
+
+.login-form {
+  width: 20%;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: 70px;
+  padding-top: 50px;
+  background-color: white;
+  color: #444444;
+  box-shadow: 0 0 4px(68 68 68 / 24%);
+
+  h2 {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000;
+    font-weight: normal;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.form-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+.btn {
+  align-items: center;
+  padding-left: 10px;
+  margin: 0 auto;
+  width: 80px;
+  font-size: 12px;
+  box-shadow: 0 0 4px ;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  :hover{
+  text-decoration: none;
+  background-color: #a0c4d3;
+  }
+}
+.Sign-up {
+  margin-top: 10px;
+
+  a {
+    text-decoration: none;
+    color: #444444;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: white;
+  }
+}
+
+.secondMain {
+  width: 100%;
+  height: 100vh;
+}
+
+.searchPart {
+  width: 100%;
+  height: auto;
+  h2 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-bottom: 1px solid black;
+  }
+}
+.searchPrefecture{
+  display: flex;
+  width: 100%;
+  height: auto;
+  ul{
+  list-style-type: none;
+  }
+  li{
+  display: inline-block;
+  }
+  h5{
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  padding: 0px 15px;
+  }
+}
+.borderLeft{
+  border-right:1px solid #444444  ;
+}
+
+.photo {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.photoContents {
+  width: 25%;
+  height: 300px;
+  margin: 0px 30px;
+  background-color: white;
+  box-shadow: 0 0 4px;
+  padding-bottom: 50px;
+  color: #444444;
+}
+
+.photoImage {
+  height: 200px;
+  width: 100%;
+  background-image: url("/Gerende.jpg");
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.tab-list {
+  display: flex;
+  list-style-type: none;
+  li {
+    width: 200px;
+    border: 1px solid #333;
+    border-left: none;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &:first-child {
+      border-left: 1px solid #333;
+    }
+    &:hover {
+      background: #333;
+      color: #fff;
+    }
+    &.active {
+      background: #333;
+      color: #fff;
+    }
+  }
+}
+.tab-container {
+  border: 1px solid #333;
+  padding: 20px;
+  line-height: 2;
+  min-height: 450px;
+  .tab-content {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
